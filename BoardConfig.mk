@@ -22,22 +22,22 @@
 # RIL
 BOARD_PROVIDES_LIBRIL := true
 BOARD_MODEM_TYPE := xmm6262
-TARGET_SPECIFIC_HEADER_PATH := device/samsung/i9300/include
+TARGET_SPECIFIC_HEADER_PATH := device/samsung/i9308/include
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/i9300/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/i9308/bluetooth
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/samsung/i9300
-TARGET_KERNEL_CONFIG := cyanogenmod_i9300_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/i9308
+TARGET_KERNEL_CONFIG := cyanogenmod_i9308_defconfig
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/samsung/i9300/rootdir/fstab.smdk4x12
+TARGET_RECOVERY_FSTAB := device/samsung/i9308/rootdir/fstab.smdk4x12
 RECOVERY_FSTAB_VERSION := 2
 
 # Selinux
 BOARD_SEPOLICY_DIRS += \
-    device/samsung/i9300/selinux
+    device/samsung/i9308/selinux
 
 BOARD_SEPOLICY_UNION += \
     bluetooth.te \
@@ -62,10 +62,10 @@ BOARD_SEPOLICY_UNION += \
     wpa_supplicant.te
 
 # assert
-TARGET_OTA_ASSERT_DEVICE := m0,i9300,GT-I9300
+TARGET_OTA_ASSERT_DEVICE := i9308,GT-I9308
 
 # TWRP
 TW_THEME := portrait_hdpi
 
 # inherit from the proprietary version
--include vendor/samsung/i9300/BoardConfigVendor.mk
+-include vendor/samsung/i9308/BoardConfigVendor.mk

@@ -17,7 +17,7 @@
 # Include common makefile
 $(call inherit-product, device/samsung/smdk4412-common/common.mk)
 
-LOCAL_PATH := device/samsung/i9300
+LOCAL_PATH := device/samsung/i9308
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -105,4 +105,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.isUsbOtgEnabled=true
 
-$(call inherit-product-if-exists, vendor/samsung/i9300/i9300-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/i9308/i9308-vendor.mk)
