@@ -69,3 +69,8 @@ TW_THEME := portrait_hdpi
 
 # inherit from the proprietary version
 -include vendor/samsung/i9308/BoardConfigVendor.mk
+
+
+ifdef MK_RELEASE
+WITH_DEXPREOPT := true
+endif
